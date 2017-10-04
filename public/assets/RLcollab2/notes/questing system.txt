@@ -1,0 +1,67 @@
+unkind: so like, we wanted the game to be like, randomly generated overworld, with towns/quests and lots of places to enter to clear and do quests for (that are also randomly generated) and some static/set things mixed in depending on class or race or some other variables too right?
+unkind: to me that premise sounds like about as fun as you could make a roguelike
+gtrabbit: yeah-- or, could have a persistent overworld (would be a lot easier) with randomly generated dungeons, etc.
+unkind: ya
+unkind: that doesnt really matter
+gtrabbit: yeah. I'm not really thinking out at the high level of like plot development and stuff yet
+gtrabbit: so, that could go a lot of ways
+gtrabbit: but, unless you're happy with a totally watered down/pointless story, then you have to have the overworld be static.... like, same towns, geography, etc.
+unkind: ahh
+unkind: yes, so the solution is
+unkind: keep the towns static
+unkind: keep the world map static
+unkind: but make the contents of everything random, for the most part
+unkind: except quest stuff
+gtrabbit: yeah. Insofar as the world map goes, I like how ToME did it
+unkind: ya me too
+gtrabbit: so. stuff is kinda in the same place, but once you go in, it's going to be different
+unkind: only issue i have with ToME
+unkind: is the early game maps get
+unkind: so repetitive
+gtrabbit: difficulty curve on that game was way off, too
+unkind: so if we just totally randomly generated the zone itself it'd never get boring
+unkind: ya that's what happens when you have 1 guy doing 100% of everything (dark god in tome's case)
+gtrabbit: yeah... and then like... ToME had different classes start in different areas.... but that was essentially pointless. you could just walk out and go anywhere else no problem
+unkind: yeah
+unkind: i like the idea of spawning into a town
+gtrabbit: would ideally like to have the plot/story play out differently depending on where you start out, who you are, etc.
+unkind: getting to buy some loot
+unkind: the heading out for X noob quest to X randomly generated dungeon
+unkind: be able to do that in like 3-5 minutes of opening the game
+unkind: would be good
+unkind: what do you think of elona's job board thing
+unkind: that's always been my favorite part of the game, the questing
+gtrabbit: hmmmm... might be possible to figure out something similar to that.... but, might be necessary to limit how many jobs appear to prevent people from just grinding to victory
+gtrabbit: but, perhaps like each town has a set number of quests.... taking some quests might prevent you from doing other ones....
+unkind: that could be a really good thing
+unkind: maybe some optional challenges per town too
+gtrabbit: the job boards being kinda like minor stuff as a way of filling time in between the big parts of the major story arc
+unkind: finding a way to prevent grinding will be difficult
+unkind: thats a problem in any roguelike really
+gtrabbit: yeah. if we wanted to write all the quests by hand, rather than having them be random (go get me a [cake]), then we could have a lot of cool stuff to do with those.... like mini plots
+gtrabbit: yeah. I think some kinda level cap would be necessary..... but that shouldn't feel arbitrary
+unkind: ya, so like, that's a really good idea, because it helps with pace
+unkind: to have set questing like that
+unkind: but i think having lots of side quests that are random could be fun too, so every game doesnt feel the same
+gtrabbit: like. ToME did a pretty good job of basically making it so you run out of stuff to do right around the level cap
+gtrabbit: if you hit level cap and there's still a ton of stuff to do, that feels lame
+unkind: ya
+unkind: they just cap monster level
+unkind: could be that simple
+unkind: monsters in certain areas scale with you
+unkind: to X point
+unkind: then stop
+gtrabbit: right. that could work
+unkind: so, if we had a nonstop quest generator going, it could still theoretically work with static quests that'd be more like actual milestones
+unkind: could quest for loot and xp till a point
+unkind: then move forward with the story to advance the game
+unkind: and the enemy level cap (in X new area)
+gtrabbit: possibly.... completing the milestone quests would be the only way to unlock higher level random quests
+unkind: yep
+unkind: i think that's perfect
+gtrabbit: so, you couldn't go from 1 to cap just on random stuff
+unkind: ya
+gtrabbit: makes it so there will always be danger / challenges. can't just go into every dungeon totally confident because you've been grinding for days
+unkind: right in the random quest description box we could have like, monster level, the boss monster, the amount of floors, the dungeon type, the reward you get in town etc
+unkind: could all be randomly generated
+unkind: would be sweet

@@ -1,0 +1,71 @@
+Lumia
+{holy, healing, power}
+Vitalizing (restores % health on attack)
+Pray: full heal and bless
+
+
+Spells:
+Cure Wounds (holy, healing)
+Bless (holy, power)
+Smite (holy)
+Cure Poison (holy, healing, nature)
+Penance (holy)
+Holy Shield (holy, power)
+Holy Strength (holy, power)
+Turn Undead (holy)
+
+Orobouros
+{dragon, time}
+Dragon Wings (fly)
+Dragon Breath (active skill, cooldown based, random element spray damage based on skills level)
+Dragon Claws (8% chance on attack to do an extra attack with a claw that does damage based on skills level)
+Pray: Haste
+
+Spells
+Haste (time)
+Slow (time)
+Fire Breath (dragon, fire)
+Summon Drake (dragon, summon)
+Polymorph self: elemental drake (dragon, shapeshift)
+polymorpth self: Dragon (dragon, shapeshift)
+
+Jivaliya
+{nature, healing)
+Regeneration +10%
+Pray: Greater Regeneration
+
+Pebble (nature) 1 target
+Regenerate (healing, nature)
+Root (nature)
+Cure Poison (nature, holy, healing)
+Summon Bears (nature, summon)
+Polymorph self: treant (nature, shapeshift)
+Polymorph self: cave bear (nature, shapeshift)
+Boulder (nature) line or AoE square
+
+Druksidal
+{unholy, demonic}
+Noxious (adds unholy damage on hit)
+Holy Weakness
+Pray: Unholy Strength, Heal to full
+
+Shadow Bolt (unholy)
+Wave of Corruption (unholy)
+Doom (unholy) Big debuff/curse
+Unholy Strength (power, unholy)
+Summon imp (summon, unholy, demonic)
+Pentagram (unholy, fire) - fire damage for all targets that stand in it
+
+to recap, gods give spell school bonuses that vary per skill level, and spell school bonuses unlock spells that you can change in town, and the spells you CAN unlock are effected by equipment bonuses (+ fire etc), and REQUIRE you to have them the requirements in place to actually cast
+
+
+
+ALL Damage Types:
+
+earth
+water
+air
+fire
+decay
+infernal
+holy

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tester</title>
+</head>
+<body>
+</body>
+
+<script type="text/javascript">
+	const stats = {
+		strength: 5,
+		vitality: 5,
+		willpower: 5,
+		dexterity: 5,
+		perception: 5,
+		intelligence: 5,
+		arcana: 5,
+		charisma: 5,
+		luck: 5,
+		
+		//change these to pass new stats to your test player. make as many basic stats as you like
+	}
+
+	const player = function(stats){
+		console.log(stats)
+		for (let key in stats){
+			this['_'+key] = stats[key];
+		}
+		
+		this.getMeleeDamageModifier = function(){
+			return Math.round( ( (this._strength *1.4) / 2) - 6);
+		}
+		
+		this.getRangedDamageModifier = function(){
+			return Math.round( ( (this._dexterity *1.3) / 2) - 4);
+		}
+		
+		this.getAccuracyBonus = function(){
+			return Math.round( ( (this._dexterity *3.2) + 10) + (this._perception *2.2) );
+		}
+			
+		this.getSpellDamage = function(){
+			return Math.round( ( ( ( (this._intelligence *1.10) / 2 ) -4 ) + (this._arcana * 1.4) / 2) - 6 )
+		}
+		
+		this.getThrowStat = function(){
+			return this._dexterity *4;
+		}
+		
+		this.getMeleeCritical = function(){
+			return Math.round( ( ( ( (this._dexterity *2) / 2.6) - 4) + (this._luck *1.5) / 2) -2);
+		}
+		
+		this.getMeleeCriticalDamageBonus = function(){
+			return Math.ceil( ( (this._strength *2.5) / 2 ) -10 );
+		}
+		
+		this.getSpellCritical = function(){
+			return Math.round( ( ( ( ( ( (this._intelligence *1.2) / 2 ) -3 ) + (this._arcana *1.2) / 2 ) - 3 )+ (this._luck *1.05) / 2 ) - 2);
+		}
+		
+		this.getRegenBonus = function(){
+			return Math.ceil( (this._vitality *2) * 0.10 );
+		}
+		
+		this.getMagicRegenBonus = function(){
+			return Math.ceil( ( (this._arcana *2) * 0.20 ) + (this._intelligence *2) * 0.10);
+		}
+		
+		this.getResistPhysical = function(){
+			return Math.ceil( ( (this._vitality *2) * 0.50 ) + (this._strength *2) * 0.30);
+		}
+		
+		this.getMagicalResist = function(){
+			return Math.ceil( ( (this._willpower *3) + (this._intelligence *2) *.40) + (this._luck *2) *.40);
+		}
+		
+		this.getMagicalPenetration = function(){
+			return Math.ceil( ( ( + (this._intelligence *2) *3) + (this._luck *2) *.30) + (this._perception *1.25) );
+		}
+		
+		this.getMaxWeight = function(){
+			return Math.round(this._strength * 4)
+		}
+		
+		this.getHpBonus = function(){
+			return Math.ceil( ( (this._vitality *2.7) / 3 ) + (this._strength *1.6) / 3 );
+		}
+		
+		this.getMpBonus = function(){
+			return Math.ceil( (this._intelligence *2.8) / 3 );
+		}
+		
+		this.getEvasion = function(){
+			return Math.ceil( ( ( ( (this._dexterity *14) /2 ) ) + (this._luck *6) /2 ) );
+		}
+		
+		this.getBlock = function(){
+			return Math.ceil( ( ( ( (this._strength *2.2) / 2) - 7) + (this._vitality *1.4) / 2) -5);
+		}
+		//make as many of these getter functions as you want. basically, you can write code for as many characteristics you want. it won't hurt anything if we don't use them right away
+		this.getOtherCharacteristic = function(){
+
+			return this._statName2 * 3;
+		}
+
+	}
+
+	let player1 = new player(stats)
+
+console.log(player1);
+//change name of function here or just make one log for each function you make 
+console.log("HP Bonus is", player1.getHpBonus())
+console.log("MP Bonus is", player1.getMpBonus())
+console.log("Melee Bonus is", player1.getMeleeDamageModifier())
+console.log("Spell Damage is", player1.getSpellDamage())
+console.log("Ranged Bonus is", player1.getRangedDamageModifier())
+console.log("Regen Bonus is", player1.getRegenBonus())
+console.log("MP Regen Bonus is", player1.getMagicRegenBonus())
+console.log("Physical Resist is", player1.getResistPhysical())
+console.log("Magical Resist is", player1.getMagicalResist())
+console.log("Magical Penetration is", player1.getMagicalPenetration())
+console.log("Evasion is", player1.getEvasion())
+console.log("Block is", player1.getBlock())
+console.log("Max Weight is", player1.getMaxWeight())
+console.log("Throwing is", player1.getThrowStat())
+console.log("Accuracy is", player1.getAccuracyBonus())
+console.log("Crit Chance is", player1.getMeleeCritical())
+console.log("Spell Crit is", player1.getSpellCritical())
+console.log("Melee Crit Bonus", player1.getMeleeCriticalDamageBonus())
+//open file in browser and check developer tools to see results
+</script>
+
+
+</html>

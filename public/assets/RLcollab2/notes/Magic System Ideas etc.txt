@@ -1,0 +1,161 @@
+Theories
+
+Magic Damage
+Type - Vulnerability (+X% damage from source, defined in creature, or equipment type, resist can work the same way)
+Fire - Ice
+Water/Frost - Lightning
+Lightning - Earth
+Earth - Fire
+Holy - Nether
+Nether - Holy
+Poison/Acid - Nothing
+
+Fire School:
+
+Flare
+Range 6
+MP: 2
+Damage 5-15 + 20% SD (spell damage)
+
+Fireball
+Range 7
+MP: 5
+Damage 12-30 + 80% SD
+AOE: 4x4
+
+Meteor
+Range 9
+MP: 10
+Damage 26-50 + 100% SD
+AoE: 5x5
+
+Fire Wall
+Range 6
+MP: 6
+AoE: 1x5
+Duration: 6 rounds
+Damage: 15-25 + 50% SD
+
+Temper
+Range Self
+MP: 5
+Duration: 60 rounds
+Enchants melee weapons to do 2-5+30% SD on successful hits
+
+
+
+----------- Spell Slot System -----------
+
+
+each spell takes up a certain weight, and players can only select up to a certain weight. total available weight is based on different stats determined by class. generally a mix of primary/secondary stats
+
+
+
+
+
+
+
+
+--------=========== Spell School List (possibilities) =======-------
+
+Cold
+Electricity / Lightning
+Fire
+Stone
+Water
+Air
+Light
+Dark / Shadow
+Vegetation / Life
+Time
+Numerology
+Magnetism
+Conductance
+Gravitation
+Abjuration
+Evocation
+Invocation
+Divination
+Thaumaturgy
+
+-------
+
+Erdtechnik  -earth
+Hydrhea  	-water
+Aethermancy -air
+Pyrosis		-fire
+Genesis		-life
+Thanatos 	-death / disease
+???			-infernal
+Divination	-Knowledge
+Illusion?	-deciet
+???			-holy / light
+???			-time
+Thaumaturgy	-miraculous/inspiration, alteration
+Numerology
+Chaos
+
+
+
+
+
+---------------- Deity Ideas------------------------
+
+
+//////////
+Deserts, war, wrath, anger, pride
+soliders, bees/ants/scoprions
+technology/science, fire
+iron/steel, summer
+??storms??
+//////////
+
+
+
+
+//////////
+Summer, confidence, marriage
+mirth, Kings, Sun, Music / Dance
+Celebration, Lions, Pride
+??storms??
+//////////
+
+
+//////////
+Mountains, stone, copper, gold, metals
+Stoic. Stern. Isolation,
+Goat. Wisdom. Snow, Numbers / Counting
+methodical, Earth. Ice, lightning?
+/////////////
+
+
+/////////////
+Winter, cold, ice, Stars. Death, old age, sleep
+darkness, lethargy, regret. Silver. Snow. Tundra, Wolves
+??decay?? Time?
+/////////////
+
+
+///////////// The Sisters? //////////
+Luck/Fate. Weaving, Moon / moonlight
+reflections. communication / language /speech
+Painting (representations). Bridges
+Valleys. Autumn. Oceans. Fish. Water
+/////////////////////////////////////
+
+
+/////////////////////
+Spring, Flowers, poison, swamps
+snakes, spiders, little crawlies
+healing, life, seduction / romance
+//////////////////////
+
+
+
+//////////////////
+Harvest -- in between states, the periphery
+Autumn, Twilight, Roads, Travel
+Farewells / Partings. Mills. Woodwork.
+Trust. Fathers. Wind. moving water (rivers and streams)
+?decay?
+/////////////////////

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<title> </title>
+<style>
+
+
+
+canvas{
+display: block;
+margin: auto;
+height: 700px;
+width: 800px;
+background-color: silver;
+padding: 6px;
+}
+
+</style>
+</head>
+<body onload="draw()">
+
+
+<canvas id="canvas"> </canvas>
+
+
+</body>
+
+<script>
+
+const unitH = 12
+const unitW = 14
+
+const hOffset = Math.round(unitH / 5) + 1.5
+
+
+const convert = function(e){
+let cRH = 150 / e.srcElement.clientHeight 
+let cRW = 300 / e.srcElement.clientWidth 
+
+
+let y = Math.round(cRH * (e.y - e.srcElement.offsetTop)) - ( Math.round(cRH * (e.y - e.srcElement.offsetTop)) % unitH ) + hOffset
+let x = Math.round(cRW * (e.x - e.srcElement.offsetLeft)) - ( Math.round(cRW * (e.x - e.srcElement.offsetLeft)) % unitW ) - 1
+
+x1 = Math.round(x / unitW)
+y1 = Math.round(y / unitH)
+
+
+
+return [x1, y1, x, y]
+
+}
+
+
+
+function draw(){
+let grid = {};
+
+let canvas = document.getElementById('canvas');
+ if (canvas.getContext){
+	let ctx = canvas.getContext('2d');
+	ctx.font = "8px serif";
+	
+	let count = 0;
+	for (let i=0; i<300; i+=unitW){
+		count++;
+		grid[count] = []; 
+		for (let k = 0; k < 150; k+=unitH){
+			grid[count].push(i+k);
+			ctx.fillText(i+k, i, k);
+}
+}
+console.log(grid);
+	
+canvas.addEventListener("mouseup", function(e){
+
+
+let point = convert(e)
+
+console.log(grid[point[0]+1][point[1]+1])
+ctx.fillStyle = 'rgba(20,200,200,1)';
+ctx.fillRect(point[2], point[3], unitW, unitH )
+ctx.fillStyle = 'black'
+ctx.textBaseline = "top";
+ctx.fillText(grid[point[0]+1][point[1]+1], point[2]+1, point[3]+1);
+
+
+//and do whatever
+
+
+})
+
+canvas.addEventListener("mousemove", function(e){
+let point = convert(e);
+
+ctx.fillStyle = 'rgba(20,200,200,1)';
+ctx.fillRect(point[2], point[3], unitW, unitH )
+ctx.fillStyle = 'black'
+ctx.textBaseline = "top";
+ctx.fillText(grid[point[0]+1][point[1]+1], point[2]+1, point[3]+1);
+window.setTimeout(function(){
+ctx.fillStyle = 'silver';
+ctx.fillRect(point[2], point[3]-1, unitW, unitH+2 );
+ctx.fillStyle = 'black'
+ctx.textBaseline = "top";
+ctx.fillText(grid[point[0]+1][point[1]+1], point[2]+1, point[3]+1);
+}, 200)
+
+
+})
+
+
+}	
+
+}
+
+
+
+
+
+
+</script>
+
+
+</html>

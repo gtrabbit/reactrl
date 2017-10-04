@@ -1,0 +1,62 @@
+
+body{
+	margin: 0;
+	background-color: black;
+}
+
+
+.intro-screen {
+	display: none;
+	.title {
+		color: white;
+		text-align: center;
+
+	}
+	.main-menu {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: grey;
+		margin: auto;
+		* {
+			width: 50%;
+			margin: 2% 25%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.skillIcon{
+	color: white;
+	border-bottom: solid white 1px;
+	margin-top: 2px;
+}
+
+.skillIcon::before{
+	counter-increment: skillIcon;
+	content: counter(skillIcon) ": ";
+}
+
+
+
+.skillBar{
+	color: white;
+	height: 100vh;
+	min-width: 60px;
+	max-width: 180px;
+	background-color: rgba(50,50,50,1);
+	flex-grow: 1;
+	padding-left: 5px;
+}
+

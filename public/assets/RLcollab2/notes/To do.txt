@@ -1,0 +1,64 @@
+Future
+blacksmiths - upgrade items/weapons quality, sell new items etc, based on gold/or fame
+world map - randomly generated towns, quests, dungeons
+Add biomes, and ecology for dungeons, and monsters within them
+boss monsters - randomly upgraded normal monsters
+give monsters loot, possibly equipment, and let them drop stuff
+Greatly improve monster spawning, vary spawn rates more
+give monsters passive scaling skills that increase randomly as they level
+traits - allow skils to be tied to traits, certain levels of skills let you gain access to new trains and/or abilities
+Cleave - start out weak and get very strong
+Sword - Add a new ability to swords
+Make parry a default stat
+affinities
+treasure chests
+boss monster loot
+master shield mastery and guaridan combat, lets you block spells, to a degree
+***Some kind of stat max for current level, like elona and potential for stats. This might actually be brilliant.
+
+Items
+SCROLLS:
+affinity - improve affinity by X
+bless - Bless spell
+experience - X amount of XP according to level
+Thrown Specific weapons?
+
+POTIONS:
+healing
+antidote
+regen
+poison
+
+
+
+PREFIXES:
+need low-level prefixes
+
+
+
+Current
+Weapon proficiences
+Prefixes/suffixes
+passive skills
+active skills
+Classes
+
+Bugs
+
+-- code to add that currently breaks game
+
+**POSSIBLY DO
+Change stat order
+
+gtrabbit: you might also have a weapon that adds a bonus to dualWield
+gtrabbit: and then you might have a passive skill that also gives a bonus
+gtrabbit: equipment and skills give bonuses as flat numbers
+gtrabbit: so like, +5, +9, whatever
+unkind: ya
+gtrabbit: but if the status applies a percentage, then the order in which we apply the various modifiers matters
+gtrabbit: so. lets say base is 20
+unkind: ah
+gtrabbit: then equipment bonuses give 5
+gtrabbit: and skills give 10
+unkind: order would be base + passives * status percent + equipment at the end
+
