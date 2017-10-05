@@ -1,0 +1,216 @@
+unkind: kk
+unkind: messing around with some race ideas atm, theorycrafting a salamander (or like dragonkin) race
+unkind: we could do like
+unkind: on creation random stuff right, like
+unkind: stages of development that aren't pre-determined
+unkind: like breath weapon types or molting into a new type of salamander at x level
+gtrabbit: uhhhh.... yeah, I guess. Pretty easy to do something like ADoM where some randomness is factored in at start.... if salamanders all have a level at which they molt, then it'd be pretty easy to vary that level at creation
+unkind: ya, i know you aren't a fan of randomness like that, but i think it could be cool in some situations
+unkind: lol
+gtrabbit: like if there is a moltLevel property, we can easily modify that as needed
+gtrabbit: well. don't mind randomness as long as I can avoid it
+gtrabbit: fun to design random stuff
+unkind: ya it isnt for everybody
+gtrabbit: Was thinking a lot of race differentiation could be linked to skill affinities
+unkind: ya those could effect affinities/gods in addition to classes
+unkind: ultimately we're going to need to change affinities to all be base zero
+gtrabbit: like dwarves have bonus affinity for Erdtechnik, certain gods, skills, etc.
+unkind: and have them all changed up by class/race modifiers
+unkind: for even further awesome, we should let players choose to modify just a bit of their starting affinities
+gtrabbit: That could be cool. Say they pick a race, class, and then like.... a personality type? or something
+gtrabbit: and that would affect affinities
+unkind: o ya, a third thing
+unkind: rather than just letting the player choose
+gtrabbit: Have you thought at all about alignment?
+gtrabbit: like, if we want to make that part of the mechanics?
+gtrabbit: "evil" gods, "good" gods, etc.
+gtrabbit: and then characters fall somewhere on the spectrum...
+unkind: ya i think you're going to want to have that available for story options
+gtrabbit: sure. Though, alignment could also be a gameplay mechanic
+gtrabbit: i.e. can't have a death knight walking around praying to the holy god and healing everybody
+unkind: oooh, so ya that's a good point
+unkind: letting gods have required or preferred alignments probably going to be a good thing
+gtrabbit: yeah..... can give alignment a number 0-100
+gtrabbit: 100 being holy, 0 being evil, for example
+gtrabbit: then every god has an alignment number
+gtrabbit: and your affinity for that god would be a function of how far away your alignment is from that number
+gtrabbit: on top of class/race modifiers
+unkind: and this would automatically effect already spent skill points obviously so you can't fuck your build up
+gtrabbit: hmmm. what do you mean? Like you kill an innocent girl and then suddenly can't heal anymore?
+unkind: o no, i mean like... you fuck up and lower your alignment by 30, put 3 more points into holy got at shitty affinity due to alignment
+unkind: you work to fix your alignment
+unkind: the points spent automatically correct themselves to be worth the current alignment value for the god
+unkind: holy god*
+gtrabbit: hmmmmm. yeah. that's complex
+unkind: ya as long as its able to be automatically adjusted it'd be good
+gtrabbit: could have that alignment affinity applied after the fact like you're saying.... or.... idk. I get what you mean, just not sure how best to fix that programmatically
+unkind: easier way to do it would be a bonus or penalty depending on how far you are from the preferred aligment
+gtrabbit: maybe alignment shouldn't affect affinity, but just be part of the spell requirements?
+unkind: probably by far the simplest way even
+unkind: if your alignment is 30 away you get a -X to the spell schools of the god
+gtrabbit: like, you must be of alignment 30-80 to cast this spell
+unkind: if it's right on the money you get 1 bonus? idk
+unkind: oh thats kinda neat too
+gtrabbit: like a bonus/penalty to the effectiveness of the spell?
+unkind: yeah, i was thinking for a lot of the spells i was making, to let their effectiveness scale with points into the god itself in addition to (or not, depending on the spell) spell power
+gtrabbit: yeah. so then add an additional alignment bonus on top of that?
+unkind: ya, or penalty
+gtrabbit: right
+unkind: that actually gets so complicated unless we're fairly generous with alignment requirements
+gtrabbit: then each spell can have a midpoint for its alignment, and then a span/step value that determines how far away you are before you start getting penalties
+unkind: i like having alignment requirements to even cast certain spells too though
+unkind: could actually make some spells lower alignment too
+gtrabbit: so like--- dread touch: {alignment: 20, span: 15}
+unkind: haha, ya you could do that with the individual spells too
+gtrabbit: if you have anywhere from 5-35, no penalty
+gtrabbit: from 0 - 50 a -1 penalty
+gtrabbit: 0 - 65 = -2 penalty
+gtrabbit: 0 -80 = -3 penalty
+gtrabbit: 0 - 95 = -4 penalty
+gtrabbit: and so on
+unkind: yeah, and the penalty could be like 20% damage lost per point
+unkind: or something
+gtrabbit: yeah
+gtrabbit: but then if you set a larger span
+gtrabbit: like: magic map: {alignment: 50, span: 40}
+gtrabbit: then basically everyone can cast that spell at full power
+gtrabbit: unless you have < 10 or > 90 alignment
+unkind: yeah, just lower the radius a bit if you're too high or low
+unkind: like 80% of the map
+unkind: we're en route to the deepest magic system too
+gtrabbit: right. so. with that system, we can fine tune every spell in terms of how restrictive it is with alignment and where on the alignment spectrum you need to fall
+gtrabbit: sounds pretty awesome
+unkind: yep, so some crazy powerful spell at high level would be super restrictive and only castable at all within like 10 alignment
+gtrabbit: right. Like, that level of magic is only available to the most devoted disciples of that god
+gtrabbit: what I like about this a lot is that it doesn't just have a simple good/evil split
+unkind: ya
+gtrabbit: like in most games you either want to be purely good or purely evil
+gtrabbit: but this could reward certain classes for being neutral
+gtrabbit: or just a little evil, or just a little good, etc.
+gtrabbit: because that might be where the spells they want are clustered
+unkind: so to recap, god required alignment effects their specific spell schools they raise per level via alignment, spells themselves have independent alignment requirements that lose or gain effiacy based on alignment
+gtrabbit: uhhmmm. idk. based on what you said earlier, I'm thinking we should get rid of the first half of that
+gtrabbit: i.e. we should not have alignment affect affinity
+gtrabbit: that could fuck with gameplay way too much
+gtrabbit: since alignment will be in flux throughout the game
+unkind: ya i think its not necessary
+unkind: maybe just have a required alignment to put points into a god?
+unkind: one that's pretty like, loose
+unkind: like evil god 0-40
+gtrabbit: yeah. that should be possible. and having it be either yes/no will prevent the issue of affinity sliding around as alignment changes
+gtrabbit: and this means you should be able to set your alignment at character creation
+unkind: yeah, it could just set it automatically
+unkind: based on the gods you pick
+gtrabbit: i.e. you select a god at startup and that sets your alignment?
+unkind: yeah
+gtrabbit: hm. yeah. god/gods
+unkind: but the fighter specific characters would have to pick
+gtrabbit: just let the player select as many as they want and just take the average of their alignments
+unkind: maybe everybody is just neutral
+unkind: till they pick gods etc
+unkind: then it can change automatically via quests monsters slain choices made etc
+unkind: so its still dynamic for athiest characters
+gtrabbit: ah. you're thinking that some characters would totally not choose any gods. yeah, then they should just ahve alignment 50
+gtrabbit: at start
+unkind: yeah
+gtrabbit: and then change based on activity, obviously
+unkind: since our current paradigm is like
+unkind: non spellcasters aren't doing anything with gods
+gtrabbit: hm. could still have combat bonuses associated with certain gods
+unkind: o yeah, definitely
+unkind: we want there to be plenty of crossover for builds to be made
+gtrabbit: but, not enforce it. if some characters totally don't want that, then they can leave the whole god thing behind and just focus on other skills
+unkind: yeah, and if those gods gave some quest or something, let them get a different kind of quest
+gtrabbit: hm. yeah. we could figure that out pretty easy....
+gtrabbit: like some town that is specifically atheist.... or a town where there is a dispute among religious sects and they want someone impartial, etc.
+unkind: yeah, lol, exactly
+gtrabbit is now Online.
+unkind: https://gyazo.com/7682a30245b2ac1cf28901982a494848
+unkind: so this is like, the surface of what im envisioning for races
+unkind: obviously they'll have full modifiers for all affinities
+unkind: when they're done and stuff
+gtrabbit: yeah, looks good
+unkind: hmm
+unkind: so like rather than totally neutral
+unkind: we do like...
+unkind: race base alignment, class modifier alignment?
+gtrabbit: hmmmmm. idk. do we want some races to be inherently aligned in some way? I guess that wouldn't be a problem with me
+gtrabbit: can have evil races, whatever
+gtrabbit: so, sure, alignment can just be a function of race/class at start
+gtrabbit: and then adjusts according to player action
+unkind: yeah
+unkind: we can let players further modify it somehow also on start
+unkind: just think those 2 things are good
+unkind: that way, although like minotaur is clearly badass in melee, if you want to play a paladin you're not going to be doing that on a minotaur
+unkind: creating more parity
+unkind: otherwise 90% of melee would pick minotaur
+unkind: i see this often in other games
+gtrabbit: right. that makes sense. only concern is that this might pigeon-hole builds
+gtrabbit: i.e. there is a Drow/necromancer build
+gtrabbit: and a dwarf/barbarian build
+gtrabbit: but no reason to play any other class if you pick Drow, or any other class if you pick dwarf
+unkind: hmm
+gtrabbit: need to have it so that it still makes sense to choose a lot of different classes within one race
+unkind: think the safest way to do that
+gtrabbit: otherwise, race/class are redundant
+unkind: is just make it so picking minotaur or some other evil race
+unkind: merely has a modifier rather than a super low base
+unkind: so like, -10
+unkind: etc
+gtrabbit: sure. and we can also have a wide selection of classes to choose from
+unkind: that way you can still do most things but it makes it significantly more difficult to do like a minotaur paladin
+unkind: ya, lots of classes/races
+gtrabbit: well. the issue is not making it so that any race can play any class
+unkind: for sure
+gtrabbit: which isn't necessary
+gtrabbit: but just that, if you pick minotaur, you still have several viable classes to choose from
+unkind: ah yeah, definitely important
+gtrabbit: i.e. minotaur/berserker isn't the only viable combo, and picking minotaur/fighter isn't shooting yourself in the foot
+unkind: yeah, that'll be what makes the game good, if we can nail that
+gtrabbit: totally fine if picking a race restricts class selection, but there should still be lots of choices
+unkind: yeah
+unkind: this actually opens up subraces pretty nicely
+gtrabbit: i.e. a minotaur/battlemage is totally awesome, minotaur/berseker totally awesome, minotaur/shaman totally awesome, and so on
+unkind: various alignment impacts etc
+gtrabbit: though perhaps minotaur/wizard sucks, but that's fine
+unkind: lol
+gtrabbit: So, that makes me think
+gtrabbit: probably the best way to achieve balancing is to do extensive play testing
+gtrabbit: I think that's where 90% of all games fail
+unkind: extremely intensive ya lol
+gtrabbit: need to have devs actively involved throughout the lifecycle of the game
+gtrabbit: can't just drop something and think you got it all figured out
+gtrabbit: huge fail for Savage
+gtrabbit: totally unbalanced
+gtrabbit: smash brothers same issue
+gtrabbit: 80% of characters unplayable in tournament play
+unkind: yeah, we have a pretty good sense for that, i feel pretty confident in that dept
+gtrabbit: so, my thought is that we develop the whole engine, then have a short but sweet story at first. level progresses really fast
+gtrabbit: and then try to get as many people to play that version as possible
+gtrabbit: get feedback on balance
+unkind: whats fun what isnt
+unkind: ya
+gtrabbit: possibly via some kinda of tracking system, as well.... like could track to see where players die and keep track of their character selection....
+gtrabbit: though that could be hugely skewed by idiots
+gtrabbit: better just to get people you trust
+unkind: well, a subreddit, a forum, a discord server
+unkind: etc
+gtrabbit: yeah
+unkind: probably pretty viable for that
+unkind: if we get to public test version
+unkind: with this level of depth
+unkind: like half of the stuff in our heads packed into the game, executed even remotely decently it'll be something people wanna play
+unkind: lol
+gtrabbit: lol. yeah. as long as it looks and plays decently
+unkind: right
+gtrabbit: anyway, then from there, while all that testing is going on, we make massive expansions on the content
+gtrabbit: build out a full story, lower level gain, possibly add more races/classes/etc
+unkind: yeah, that'd be the good time to put up a kickstarter or patreon if feedback is good from the testers
+gtrabbit: yeah. important to have everything good at the beta release though, including the plot
+gtrabbit: like, people need to want to know what happens next
+unkind: ya
+gtrabbit: ugh. anyway. I have to sleep
+gtrabbit: will talk later
+gtrabbit: uhmmm. should save this chat somewhere...
+unkind: ya, ill save it to a notepad file
+unkind: later man
