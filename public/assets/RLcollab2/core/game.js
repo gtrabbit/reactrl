@@ -1,40 +1,4 @@
-
-
-const startGame = function(){
-	if (!ROT.isSupported()) {
-    	alert("The rot.js library isn't supported by your browser.");
-	} else {
-		Game.init();
-		console.log("horeses")
-		// const gameDisplay = Game.getDisplay().getContainer();
-		// const statusDisplay = Game.getStatusDisplay().getContainer();
-		// const msgDisp = Game.getMsgDisplay().getContainer();
-
-		// gameDisplay.id = "gameDisplay";
-		// gameDisplay.className = "gameDsp centered-block";
-		// msgDisp.className = "centered-block msg";
-		// statusDisplay.className = "centered-block status";
-		// Game.skillBar = document.createElement('div');
-		// Game.skillBar.className = "skillBar";
-		// Game.skillBar.innerHTML = "Skills: <hr>"
-		// const main = document.getElementById('mainDisplays');
-		// const allScreens = document.getElementById('allScreens');
-
-		// allScreens.insertBefore(Game.skillBar, main);
-
-		// main.appendChild(gameDisplay);
-		// main.appendChild(statusDisplay);
-		// main.appendChild(msgDisp);
-	
-
-	//	Game.switchScreen(Game.Screen.startScreen);
-	}
-
-}
-
-
-
-const Game = {
+window.Game = {
 		display: null,
 		init: function(){
 			this._display = new ROT.Display({width: this._screenWidth, height: this._screenHeight + 1});
@@ -93,5 +57,54 @@ const Game = {
 
 	} //end of game object
 
+Game.startup = {
+	player: null
+}
+
+Game.startup.newgame = function(options){
+	if (!ROT.isSupported()) {
+    	alert("The rot.js library isn't supported by your browser.");
+	} else {
+		Game.init();
+		const gameDisplay = Game.getDisplay().getContainer();
+		gameDisplay.id = "gameDisplay";
+		gameDisplay.className = "gameDsp centered-block";
+		document.getElementById('gameDisplayContainer').appendChild(gameDisplay);
+		Game.skillBar = document.getElementById('skillbar')
 
 
+
+		
+
+
+
+		
+		// const statusDisplay = Game.getStatusDisplay().getContainer();
+		// const msgDisp = Game.getMsgDisplay().getContainer();
+
+		
+		// msgDisp.className = "centered-block msg";
+		// statusDisplay.className = "centered-block status";
+		// Game.skillBar = document.createElement('div');
+		// Game.skillBar.className = "skillBar";
+		// Game.skillBar.innerHTML = "Skills: <hr>"
+		// const main = document.getElementById('mainDisplays');
+		// const allScreens = document.getElementById('allScreens');
+
+		// allScreens.insertBefore(Game.skillBar, main);
+
+		// main.appendChild(gameDisplay);
+		// main.appendChild(statusDisplay);
+		// main.appendChild(msgDisp);
+	
+
+	//	Game.switchScreen(Game.Screen.startScreen);
+	}
+
+}
+
+
+Game.startup.makeNewCharacter = function(character){
+	let player = new Game.Entity(character)
+	Game.switchScreen(Game.Screen.playScreen, player)
+}

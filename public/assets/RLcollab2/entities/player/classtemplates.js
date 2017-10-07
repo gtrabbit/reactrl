@@ -50,7 +50,6 @@ Game.classTemplates.getAvailableClasses = function(){
             classes.push(Game.classTemplates[key]);
         }
     }
-    console.log(classes)
     return classes;
 }
 

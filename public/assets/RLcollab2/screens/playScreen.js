@@ -6,15 +6,15 @@ Game.Screen.playScreen = {
 	exit: function(){
 		console.log("exiting the play screen")
 	},
-	enter: function(className){
+	enter: function(playercharacter){
  
       
 		let width = 100;
 		let height = 48;
 		let depth = 6;
 		let tiles = new Game.Builder(width, height, depth).getTiles();
-		this._player = new Game.Entity(className);
-        console.log(this._player);
+		this._player = playercharacter;
+        console.log("inside the game!", this._player);
         this.skills = this._player.getSkills();
 		this._map = new Game.Map.Cave(tiles, this._player);
 		this._map.getEngine().start();
