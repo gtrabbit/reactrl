@@ -7,7 +7,6 @@ class PlayScreen extends Component {
 	componentDidMount(){
 		window.Game.startup.newgame(null)
 		window.Game.startup.makeNewCharacter(this.props.character)
-		console.log("cats")
 	}
 
 	render(){

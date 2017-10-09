@@ -92,8 +92,63 @@ Illusion?	-deciet
 ???			-holy / light
 ???			-time
 Thaumaturgy	-miraculous/inspiration, alteration
-Numerology
-Chaos
+Numerology  -order
+Chaos		-chaos
+
+
+
+
+
+<<======<<<===== Gods - Magic ======>>>====>>>>>
+
+
+		Spring							Summer
+   /    	    \					  /			\
+Sarah:			Illuen:			Auhov:			Khar:
+[Genesis, 		[Illusion,		[Pyrosis,		[Pyrosis,
+Hydrhea,		Thaumaturgy,	Genesis			Erdtechnik,
+<light>]		Aethermancy]	Thaumaturgy		Infernal]
+(60)			(40)			(80)			(20)
+
+						Time
+					/			\
+				<????>			Samsvaura
+				[<Time>,		[<Time>,
+				Divination,		Illusion,
+				Numerology]		Chaos
+				(50)			(50)
+
+
+		Autumn							Winter
+  / 			\					/		    \			
+Almaya:			Eurydin:		Yashua:			Seimone:
+[Earth,			[Chaos,			[<Holy>,		[Thanatos
+Numerology]		Thanatos,		Aethermancy,	Hydrhea
+								Divination]		<Infernal>
+(70)			(30)			(90)			(10)
+
+
+
+Genesis			12
+Thanatos		12
+Numerology		12
+<Chaos>			12
+<Illusion>		12
+<Divination>	12
+<Holy>			12
+<Infernal>		12
+Erdtechnik		12
+Aethermancy		12
+Pyrosis			12
+Hydrhea			12
+<Time>			12
+Thaumaturgy		12
+
+
+
+
+
+
 
 
 

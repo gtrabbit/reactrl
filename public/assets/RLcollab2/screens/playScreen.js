@@ -14,7 +14,6 @@ Game.Screen.playScreen = {
 		let depth = 6;
 		let tiles = new Game.Builder(width, height, depth).getTiles();
 		this._player = playercharacter;
-        console.log("inside the game!", this._player);
         this.skills = this._player.getSkills();
 		this._map = new Game.Map.Cave(tiles, this._player);
 		this._map.getEngine().start();
