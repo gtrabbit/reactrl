@@ -107,7 +107,7 @@ Chaos		-chaos
 Sarah:			Illuen:			Auhov:			Khar:
 [Genesis, 		[Illusion,		[Pyrosis,		[Pyrosis,
 Hydrhea,		Thaumaturgy,	Genesis			Erdtechnik,
-<light>]		Aethermancy]	Thaumaturgy		Infernal]
+<Holy>]		Aethermancy]	Thaumaturgy		Infernal]
 (60)			(40)			(80)			(20)
 
 						Time
