@@ -9,7 +9,6 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      counter: 1,
       ISopen: true,
       CCopen: false,
       PSopen: false,
@@ -33,17 +32,17 @@ class App extends Component {
     componentDidMount(){
 
         const srcList = [
-            "assets/RLcollab2/libs/rot.min.js",
-            "assets/RLcollab2/libs/sprintf.min.js",
-            "assets/RLcollab2/core/game.js",
-            "assets/RLcollab2/core/utilities.js",
-            "assets/RLcollab2/core/repository.js",
-            "assets/RLcollab2/core/geometry.js",
-            "assets/RLcollab2/core/glyph.js",
-            "assets/RLcollab2/core/dynamicglyph.js",
-            "assets/RLcollab2/screens/mainScreens.js",
-            "assets/RLcollab2/screens/itemScreens.js",
-            "assets/RLcollab2/screens/targetScreens.js",
+            "/assets/RLcollab2/libs/rot.min.js",
+            "/assets/RLcollab2/libs/sprintf.min.js",
+            "/assets/RLcollab2/core/game.js",
+            "/assets/RLcollab2/core/utilities.js",
+            "/assets/RLcollab2/core/repository.js",
+            "/assets/RLcollab2/core/geometry.js",
+            "/assets/RLcollab2/core/glyph.js",
+            "/assets/RLcollab2/core/dynamicglyph.js",
+            "/assets/RLcollab2/screens/mainScreens.js",
+            "/assets/RLcollab2/screens/itemScreens.js",
+            "/assets/RLcollab2/screens/targetScreens.js",
             "assets/RLcollab2/screens/levelupscreens.js",
             "assets/RLcollab2/screens/playScreen.js",
             "assets/RLcollab2/skills/active/activeskills.js",
@@ -63,9 +62,9 @@ class App extends Component {
             "assets/RLcollab2/items/item.js",
             "assets/RLcollab2/items/itemmixins.js",
             "assets/RLcollab2/items/itemTemplates.js",
-            "assets/RLcollab2/items/prefixesAndsuffixes.js",
+            "assets/RLcollab2/items/prefixesANDsuffixes.js",
             "assets/RLcollab2/items/itemFactory.js",
-            "assets/RLcollab2/items/itemSelector.js",
+            "assets/RLcollab2/items/ItemSelector.js",
             "assets/RLcollab2/entities/player/classtemplates.js",
             "assets/RLcollab2/entities/entities.js",
             "assets/RLcollab2/items/items.js",
@@ -78,12 +77,13 @@ class App extends Component {
             let script = document.createElement('script');
             script.src = srcList[src];
             script.defer = true;
+            script.asyc = true;
             window.setTimeout(()=>{
-                this.setState(state=>(state.counter++))
-                document.body.appendChild(script);
-                if (src >= 37){
-                }
-            }, 230*src)
+              document.body.appendChild(script);
+
+            }, 50*src)
+            
+
             
 
         }
@@ -94,18 +94,16 @@ class App extends Component {
 
 
     render() {
-        let time = ~~((this.state.counter / 38)*100)
+
         return (
             <div className="game">
              
-              <div className="load-screen">  
-                {time  < 100 ? "Loading..." + time + "%" : ''} 
-              </div>
+
               
               {this.state.ISopen && 
                 <IntroScreen 
                   toggleScreen={this.toggleScreen.bind(this)}
-                  ready={time>=100}> </IntroScreen>}
+                  ready={true}> </IntroScreen>}
               
               {this.state.CCopen && 
                 <CharacterCreation

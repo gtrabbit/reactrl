@@ -157,60 +157,93 @@ Thaumaturgy		12
 ---------------- Deity Ideas------------------------
 
 
-//////////
-Deserts, war, wrath, anger, pride
+------  Khar ---------- The God of War
+	Male
+Deserts, war, wrath, anger, forges
 soliders, bees/ants/scoprions
 technology/science, fire
 iron/steel, summer
-??storms??
-//////////
+///////////////////////// The Smith
 
 
 
 
-//////////
+------ Auhov ---------- The God of Music
+	Male
 Summer, confidence, marriage
 mirth, Kings, Sun, Music / Dance
 Celebration, Lions, Pride
-??storms??
-//////////
-
-
-//////////
-Mountains, stone, copper, gold, metals
-Stoic. Stern. Isolation,
-Goat. Wisdom. Snow, Numbers / Counting
-methodical, Earth. Ice, lightning?
-/////////////
-
-
-/////////////
-Winter, cold, ice, Stars. Death, old age, sleep
-darkness, lethargy, regret. Silver. Snow. Tundra, Wolves
-??decay?? Time?
-/////////////
-
-
-///////////// The Sisters? //////////
-Luck/Fate. Weaving, Moon / moonlight
-reflections. communication / language /speech
-Painting (representations). Bridges
-Valleys. Autumn. Oceans. Fish. Water
-/////////////////////////////////////
-
-
-/////////////////////
-Spring, Flowers, poison, swamps
-snakes, spiders, little crawlies
-healing, life, seduction / romance
-//////////////////////
+/////////////////////// King Auhov
 
 
 
-//////////////////
-Harvest -- in between states, the periphery
-Autumn, Twilight, Roads, Travel
-Farewells / Partings. Mills. Woodwork.
-Trust. Fathers. Wind. moving water (rivers and streams)
-?decay?
-/////////////////////
+
+-------- Sarah ------- The God of Mothers
+	Female
+Fertility, Mothers, Rivers,
+Life, water, children, goodness,
+healing
+////////////////////// Mother
+
+
+-------- Illuen ------- The God of Sex
+	Female
+Flowers, perfumes, sexuality,
+Forests/jungles, charm, deciet,
+spiders, snakes,
+/////////////////////// The Lady of Perfumes
+
+
+
+-------- Almaya ------- The God of Agriculture
+	Male
+Harvests, order, civilization
+planning, structure, fulfillment
+bounty, abundance, families,
+bridges, 
+/////////////////////// 
+
+
+
+-------- Eurydin ------ The God of Sorrow
+	Female
+Sorrow, fallow land, waste,
+regret, loss, grief, roads,
+travellers, widows
+///////////////////////// The God of Widows
+
+
+
+-------- Yashua ------- The God of Law
+	Male
+Purity, innocence, dignity,
+High Mountains, Rationality,
+Justice, silver, Goat, lightning
+////////////////////////// 
+
+
+-------- Seimoneh ----- The God of Death
+	Female
+Oceanic depths, despair,
+isolation, Apathy, death,
+old age, weakness
+//////////////////////////
+
+
+--------- Clothos ----- The God of Order
+	Female
+Eternity, weaving, stars,
+fate, trust, truth, serenity
+artwork
+/////////////////////////// The Weaver
+
+
+--------- Samsvaura --- The God of Chaos
+	Male
+Equanimity, communication,
+moonlight, reflections, luck,
+mystery, ephemerality
+////////////////////////// The Other
+
+
+
